@@ -1,5 +1,5 @@
 task :environment do
-  require_relative './config/environment'
+  require_relative './config/environment.rb'
 end
 
 desc 'outputs hello to the terminal'

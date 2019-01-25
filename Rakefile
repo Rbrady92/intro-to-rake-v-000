@@ -7,6 +7,10 @@ namespace :greeting do
   task :hello do
     puts "hello from Rake!"
   end
+
+  task :hola do
+    puts 'hola de rake!'
+  end
 end
 
 namespace :db do

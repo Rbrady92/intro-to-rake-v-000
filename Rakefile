@@ -1,6 +1,6 @@
-task :environment do 
+task :environment do
   require_relative './config/environment'
-end 
+end
 
 desc 'outputs hello to the terminal'
 task :hello do
@@ -9,14 +9,12 @@ end
 
 namespace :db do
   desc 'migrate changes to your database'
-  rask :migrate => :environment do 
+  rask :migrate => :environment do
     Student.create_table
-  end 
+  end
 
   desc 'seed the db with dummy data'
-  task :seed do 
+  task :seed do
     require_relative './db/seedsrb'
-  end 
+  end
 end
-
-
